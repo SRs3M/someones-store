@@ -1,0 +1,30 @@
+:root {
+    --bg-primary : #0F172A; /* Background */
+    --bg-card : #1E293B; /* Card background */
+    --text-primary : #F8FAFC; /* Text */
+    --text-secondary : #94A3B8; /* Secondary text */
+    --accent : #3B82F6; /* Buttons, links, important tags */
+    --error : #EF4444; /* Error */
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+header {
+    background-color: var(--bg-card);
+}
+
+header h1 {
+    color: var(--text-primary);
+    text-align: center;
+}
+
+header p {
+    color: var(--text-secondary);
+    text-align: center;
+}   
+
+#store {
+    color: var(--text-primary);
+}

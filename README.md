@@ -43,7 +43,7 @@ Where the following implementation route will be:
 And the commit name structure will be:
 - Significant names (e.g., No things like "added a feature", specify *what* feature)
 - The name structure will be based around the project (2nd person i think it is, e.g., Added/Modified/Fixed [ ... ]) so no names like "We add" or "I add"
-- Commit every small change (If i create a perfectly fine feature and i don't commit it, if the next feature i want to add breaks the entire code. I will have to revert back to the last commit (The which didn't have the perfecly fine feature))
+- Commit every small change (If i create a perfectly fine feature and i don't commit it, if the next feature i want to add breaks the entire code. I will have to revert back to the last commit (The which didn't have the perfectly fine feature))
 
 # Creator(s)
 ## About me
