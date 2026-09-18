@@ -9,10 +9,14 @@
 
 body {
     background-color: var(--bg-primary);
+    margin: 0rem;
+    padding: 0rem; 
 }
 
 header {
     background-color: var(--bg-card);
+    padding: 1rem 0.1rem;
+    margin: 0rem 0rem 0.3rem; /* Arriba, Horizontal, Inferior */
 }
 
 header h1 {
@@ -23,8 +27,20 @@ header h1 {
 header p {
     color: var(--text-secondary);
     text-align: center;
-}   
-
-#store {
-    color: var(--text-primary);
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 50%;
+    margin: 0.2rem;
+}
+#store-item {
+    background-color: var(--bg-card);
+    margin: 0.4rem;
+    padding: 0.01rem 0.8rem;
+    max-width: 80%;
+}
+#store-item h2 { color: var(--text-primary) }
+#store-item p { color: var(--text-secondary) }
+#store-item img { max-width: 30%; max-height: 30%; display:block; margin: auto } /* Convert the image to block so that margin can affect it */
