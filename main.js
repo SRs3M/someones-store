@@ -13,8 +13,10 @@ async function renderStore() {
             HTML += `
             <article id="store-item">
                 <h2>${item.title}</h2>
-                <img src="${item.image}">
-                <p>${item.price}<p>
+                <div class="store-image">
+                    <img src="${item.image}">
+                </div>
+                <p>$${item.price}<p>
                 <p>★${item.rating.rate}, ${item.rating.count} reviews</p>
             </article>
             `
