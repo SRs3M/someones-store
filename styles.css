@@ -14,6 +14,17 @@ body {
     /* padding: 0rem; */
 }
 
+button {
+    background: none;
+    border: none;
+    font: inherit; /* Hereda la letra del proyecto */
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 header {
     background-color: var(--bg-card);
     padding: 1rem 0.1rem;
@@ -36,6 +47,13 @@ header p { color: var(--text-secondary); text-align: center; }
     display: block;
     height: 30rem;
 }
-#store-item h2 { color: var(--text-primary) }
-#store-item p { color: var(--text-secondary); }
-#store-item img { max-height: 300px; width: auto; display:block; margin: auto } /* Convert the image to block so that margin can affect it */
+#store-item h2 { color: var(--text-primary); }
+#store-item p { color: var(--text-secondary); margin: 0.3px 0rem 0rem }
+#store-item img { max-height: 300px; max-width: 300px; display:block; margin: auto } /* Convert the image to block so that margin can affect it */
+#store-item a {
+    padding: 0 0.2rem;
+    background-color: var(--accent);
+    border-radius: 0.5rem;
+    transition: box-shadow 0.35s ease-in-out;
+}
+#store-item a:hover { cursor: pointer; box-shadow: 0.3rem 0.3rem 0.3rem var(--accent) }
