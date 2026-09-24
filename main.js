@@ -1,6 +1,8 @@
 // Variable Initialization
 const store = document.getElementById("store")
+const storePurchase = document.getElementById("store-purchase");
 
+// Render the store
 async function renderStore() {
     let HTML = ``;
     try {
@@ -18,6 +20,8 @@ async function renderStore() {
                 </div>
                 <p>$${item.price}<p>
                 <p>★${item.rating.rate}, ${item.rating.count} reviews</p>
+                <p id="store-category">${item.category}</p>
+                <a href="item.html" target="_blank">Purchase!</a>
             </article>
             `
             store.innerHTML = HTML;
@@ -28,3 +32,9 @@ async function renderStore() {
     }
 }
 renderStore();
+
+// When clicking the "Purchase" button
+storePurchase.addEventListener("click", async () => {
+
+})
+
